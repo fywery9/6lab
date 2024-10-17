@@ -89,13 +89,13 @@ sepiaButton.addEventListener('click', () => {
 //////////////////////////////////////////////
 
 const pictures = [
-    'pictures/picture1.jpg',
-    'pictures/picture2.jpg',
-    'pictures/picture3.jpg',
-    'pictures/picture4.jpg',
-    'pictures/picture5.jpg',
-    'pictures/picture6.jpg',
-    'pictures/picture7.jpg',
+    'pictures/picture1.JPG',
+    'pictures/picture2.JPG',
+    'pictures/picture3.JPG',
+    'pictures/picture4.JPG',
+    'pictures/picture5.JPG',
+    'pictures/picture6.JPG',
+    'pictures/picture7.JPG',
 
 ];
 
