@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristan's Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="headerName">
+            <h1>Tristan's site</h1>
+        </div>
+    <div class="allButtons">
+            <button class="buttonSun noChange"><span class="buttonColorCircle"></span>Sun</button>
+            <button class="buttonPlum noChange"><span class="buttonColorCircle"></span>Plum</button>
+            <button class="buttonWine noChange"><span class="buttonColorCircle"></span>Wine</button>
+            <button class="buttonTree noChange"><span class="buttonColorCircle"></span>Tree</button>
+            <button class="buttonBlue noChange"><span class="buttonColorCircle"></span>Blue</button>
+        </div>
+    </header>
+
+    <section class="firstSection">
+        <div class="pictureBlock">
+            <img src="picture.jpg" id="picture">
+        </div>
+        <div class="buttonsFilter">
+            <button id="blur">Blur</button>
+            <button id="brighness">Brighness</button>
+            <button id="contrast">Contrast</button>
+            <button id="dropShadow">Shadow</button>
+            <button id="grayscale">Grayscale</button>
+            <button id="hueRotate">Rotate</button>
+            <button id="invert">Invert</button>
+            <button id="opacity">Opacity</button>
+            <button id="saturate">Saturate</button>
+            <button id="sepia">Sepia</button>
+            
+        </div>
+
+    </section>
+
+    <section class="secondSection">
+        <div class="slider">
+            <button class="prev noChange" id="buttonPrev"><</button>
+            <img src="pictures/picture1.JPG" id="picture1">
+            <button class="next noChange" id="buttonNext">></button>
+        </div>
+
+        <div class="dots" id="dotsContainer"></div>
+    </section>
+
+    <section class="thrdSection">
+        <div>
+            <h1 class="game">Гра з пошуку пар</h1>
+            <button id="start-button">Почати гру</button>
+            <div id="game-board" class="game-board hidden"></div>
+            <p id="message"></p>
+        </div>
+    </section>
+
+    <section class="fourthSection">
+        <div class="questionContainer" id="questionContainer">
+            <h1>Тест з JavaScripn</h1>
+            <p id="questionText">Яка змінна є глобальною?</p>
+            <form id="quizForm">
+                <label><input type="radio" name="answer"> const</label><br>
+                <label><input type="radio" name="answer"> var</label><br>
+                <label><input type="radio" name="answer"> let</label><br>
+            </form>
+            <button id="nextButton" onclick="nextQuestion()">Далі</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h3>Результати</h3>
+            <p id="scoreText"></p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

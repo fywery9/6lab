@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+ 
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #392D32;
+}
+
+header {
+    background-color: #302026;  
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+.headerName h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+.allButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.allButtons button {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #D9D9D9; 
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.buttonColorCircle {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+
+}
+
+.buttonSun .buttonColorCircle {
+    background-color: #E78905;
+}
+
+.buttonPlum .buttonColorCircle {
+    background-color: #743682;
+}
+
+.buttonWine .buttonColorCircle {
+    background-color: #823636;
+}
+
+.buttonTree .buttonColorCircle {
+    background-color: #368256;
+}
+
+.buttonBlue .buttonColorCircle {
+    background-color: #4A6B7D;
+}
+
+
+.firstSection {
+    max-width: 500px;
+    max-height: 550px;
+    border-radius: 10px;
+    padding: 90px 100px;
+    margin: 100px auto;
+    margin-top: 40px;
+    background-color: #524449;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.pictureBlock {
+    margin-right: 60px;
+}
+
+.pictureBlock img {
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+}
+
+.buttonsFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.buttonsFilter button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #904747;
+    color: #FFFFFF;
+    border: none;
+    outline: none; 
+    font-weight: bold;
+    font-size: large;
+}
+
+.buttonsFilter button:focus ,.buttonsFilter button:active {
+    background-color: #BB8585; 
+}
+
+.secondSection {
+    max-width: 500px; 
+    max-height: 330px; 
+    border-radius: 10px;
+    padding: 90px 100px;
+    margin: 100px auto;
+    margin-top: 10px;
+    background-color: #524449;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    max-width: 500px; 
+    max-height: 400px; 
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dots .dot {
+    width: 20px;
+    height: 8px;
+    margin: 8px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+}
+
+.dots .dot.active {
+    background-color: #392D32;
+}
+
+
+.thrdSection {
+    width: 660px;
+    max-height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: #524449;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.game {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#start-button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #904747;
+    color: #FFFFFF;
+    border: none;
+    outline: none; 
+    font-weight: bold;
+    font-size: large;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: #904747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#message {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fourthSection {
+    max-width: 600px;
+    max-height: 350px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin: 40px auto;
+    background-color: #524449;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.fourthSection h1 {
+    margin: 30px;
+}
+
+.questionContainer {
+    margin: 20px 0;
+    text-align: center
+    
+}
+
+.fourthSection button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #904747;
+    color: #FFFFFF;
+    border: none;
+    outline: none; 
+    font-weight: bold;
+    font-size: large;
+}
+
+.fourthSection form {
+    margin: 20px;
+}
+
+.fourthSection label {
+    display: block;
+    text-align: center;
+}
+
+.fourthSection input {
+    margin-right: 10px;
+}
+
+
