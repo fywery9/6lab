@@ -34,7 +34,6 @@ buttonBlue.addEventListener('click', () => changeColors('#4A6B7D', '#243945','#4
 
 ////////////////////////////////////////////
 
-
 const image = document.getElementById('picture');
 const blurButton = document.getElementById('blur');
 const brighnessButton = document.getElementById('brighness');
