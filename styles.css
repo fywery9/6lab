@@ -298,4 +298,17 @@ header {
     margin-right: 10px;
 }
 
-
+.callToAction {
+    position: fixed;
+    padding: 15px 20px;  
+    border-radius: 5px; 
+    background-color: #904747;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    
+}

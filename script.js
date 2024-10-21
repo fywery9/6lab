@@ -6,6 +6,7 @@ const buttonBlue = document.querySelector('.buttonBlue');
 const header = document.querySelector('header'); 
 const sections = document.querySelectorAll('section'); 
 const buttons = document.querySelectorAll('button');
+const callToAction = document.querySelector('.callToAction');
 
 function changeColors(bodyColor, headerColor, sectionColor, buttonColor) {
     document.body.style.backgroundColor = bodyColor;
@@ -20,6 +21,8 @@ function changeColors(bodyColor, headerColor, sectionColor, buttonColor) {
             button.style.backgroundColor = buttonColor;
         }
     });
+
+    callToAction.style.backgroundColor = buttonColor;
 
     currentCardColor = buttonColor;
     updateCardColors();
@@ -89,13 +92,13 @@ sepiaButton.addEventListener('click', () => {
 //////////////////////////////////////////////
 
 const pictures = [
-    'pictures/picture1.JPG',
-    'pictures/picture2.JPG',
-    'pictures/picture3.JPG',
-    'pictures/picture4.JPG',
-    'pictures/picture5.JPG',
-    'pictures/picture6.JPG',
-    'pictures/picture7.JPG',
+    '../pictures/picture1.JPG',
+    '../pictures/picture2.JPG',
+    '../pictures/picture3.JPG',
+    '../pictures/picture4.JPG',
+    '../pictures/picture5.JPG',
+    '../pictures/picture6.JPG',
+    '../pictures/picture7.JPG',
 
 ];
 
@@ -232,17 +235,47 @@ startButton.addEventListener('click', startGame)
 //////////////////////////////////////
 
 let questions = [
+
     { question: "Яка змінна є глобальною?", 
         options: ["const", "var", "let"], 
         correct: "var" },
-
+      
     { question: "Що таке замикання?", 
         options: ["Функція", "Блок коду", "Скорочення"], 
         correct: "Функція" },
-
+      
+    { question: "Який тег відповідає за підключення JavaScript файлу?", 
+        options: ["<javascript>", "<script>", "<js>"], 
+        correct: "<script>" },
+          
     { question: "Що таке promise?", 
         options: ["Колбек", "Метод", "Об'єкт"], 
-        correct: "Об'єкт" }
+        correct: "Об'єкт" },
+      
+    { question: "Яка конструкція використовується для обробки помилок в JavaScript?", 
+        options: ["catch", "try...catch", "catch...finally"], 
+        correct: "try...catch" },
+      
+    { question: "Який оператор порівняння не проводить приведення типів?", 
+        options: ["==", "!=", "==="], 
+        correct: "===" },
+      
+    { question: "Що означає 'use strict' у JavaScript?", 
+        options: ["Додає новий синтаксис", "Активує строгий режим", "Зменшує розмір файлу"], 
+        correct: "Активує строгий режим" },
+      
+    { question: "Як створити об'єкт у JavaScript?", 
+        options: ["new Object()", "{} або new Object()", "Object.create()"], 
+        correct: "{} або new Object()" },
+      
+    { question: "Що повертає метод map() в масивах?", 
+        options: ["Новий масив", "Той самий масив", "Значення масиву"], 
+        correct: "Новий масив" },
+      
+    { question: "Яка функція використовується для виведення повідомлень в консоль?", 
+        options: ["alert()", "console.log()", "prompt()"], 
+        correct: "console.log()" }
+          
 ];
 
 let currentQuestionIndex = 0;
